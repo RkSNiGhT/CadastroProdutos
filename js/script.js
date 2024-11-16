@@ -89,8 +89,8 @@ function addNewRow(prod) {
 
     //Insert product description
     var descriptionNode = document.createTextNode(prod.description);
-    var cell = newRow.insertCell();
-    cell.className="d-none d-md-table-cell";
+    var cell = newRow.insertCell(); //permite modificar itens da celula onde sera inserida a descrição
+    cell.className="d-none d-md-table-cell"; //Modifica a class que este novo item tera.
     cell.appendChild(descriptionNode);
 
     //Insert product price
