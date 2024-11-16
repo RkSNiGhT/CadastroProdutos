@@ -1,5 +1,10 @@
 
-$("#inputPreco").mask("000.000.000.000.000,00", { reverse: true });
+//Masks
+//$("#inputPrice").mask("000.000.000.000.000,00", { reverse: true });
+
+function convertToNumber(priceFormat){
+    return priceFormat.replace(/\./g, '').replace(',', '.');
+}
 
 var products = [
     {
@@ -47,7 +52,7 @@ function loadProducts() {
     }
 }
 
-//Save products
+//save a product
 function save() {
 
     var prod = {
@@ -67,7 +72,8 @@ function save() {
 
 }
 
-//Add new product
+
+//Add new Row
 function addNewRow(prod) {
     var table = document.getElementById("productsTable");
 
