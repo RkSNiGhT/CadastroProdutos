@@ -51,7 +51,7 @@
 
 
                         <div class="row mb-3 mt-3">
-                            <label for="inputPreco" class="col-sm-2 col-form-label">Opções:</label>
+                            <label class="col-sm-2 col-form-label">Opções:</label>
                             <div class="col-sm-4">
                                 <div class="form-check">
                                     <input class="form-check-input" type="checkbox" value="" id="CBPromo">
@@ -76,12 +76,55 @@
 
                 </div>
             </div>
+
+
         </section>
         <hr>
         <section>
             <div class="display-6">
                 Produtos Cadastrados:
             </div>
+            <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Nome</th>
+                    <th scope="col">Descrição</th>
+                    <th scope="col">Preço</th>
+                    <th scope="col">Categoria</th>
+                    <th scope="col">Opções</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>Computador MT-1X</td>
+                    <td>Intel i7, 16gb ram, SSD 256GB, HD 1TB</td>
+                    <td>4.900,00</td>
+                    <td>Nacional</td>
+                    <td>
+                        <span class="badge text-bg-success">P</span>
+                        <span class="badge text-bg-primary">L</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>Computador MT-1X</td>
+                    <td>Intel i7, 16gb ram, SSD 256GB, HD 1TB</td>
+                    <td>5.900,00</td>
+                    <td>Importado</td>
+                    <td><span class="badge text-bg-primary">L</span></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td>Computador MT-1X</td>
+                    <td>Intel i7, 16gb ram, SSD 256GB, HD 1TB</td>
+                    <td>2.900,00</td>
+                    <td>Produção Propria</td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
         </section>
     </main>
 
